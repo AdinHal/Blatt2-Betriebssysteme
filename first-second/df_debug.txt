@@ -1,0 +1,179 @@
+execve("/usr/bin/df", ["df", "-h"], 0x7ffe8f2fcf58 /* 25 vars */) = 0
+brk(NULL)                               = 0x558b71081000
+arch_prctl(0x3001 /* ARCH_??? */, 0x7ffcefebffa0) = -1 EINVAL (Invalid argument)
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=69360, ...}) = 0
+mmap(NULL, 69360, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f36f8c47000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\360q\2\0\0\0\0\0"..., 832) = 832
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+pread64(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32, 848) = 32
+pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\t\233\222%\274\260\320\31\331\326\10\204\276X>\263"..., 68, 880) = 68
+fstat(3, {st_mode=S_IFREG|0755, st_size=2029224, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f36f8c45000
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+pread64(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32, 848) = 32
+pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\t\233\222%\274\260\320\31\331\326\10\204\276X>\263"..., 68, 880) = 68
+mmap(NULL, 2036952, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f36f8a53000
+mprotect(0x7f36f8a78000, 1847296, PROT_NONE) = 0
+mmap(0x7f36f8a78000, 1540096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x25000) = 0x7f36f8a78000
+mmap(0x7f36f8bf0000, 303104, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19d000) = 0x7f36f8bf0000
+mmap(0x7f36f8c3b000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e7000) = 0x7f36f8c3b000
+mmap(0x7f36f8c41000, 13528, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f36f8c41000
+close(3)                                = 0
+arch_prctl(ARCH_SET_FS, 0x7f36f8c46580) = 0
+mprotect(0x7f36f8c3b000, 12288, PROT_READ) = 0
+mprotect(0x558b70579000, 4096, PROT_READ) = 0
+mprotect(0x7f36f8c85000, 4096, PROT_READ) = 0
+munmap(0x7f36f8c47000, 69360)           = 0
+brk(NULL)                               = 0x558b71081000
+brk(0x558b710a2000)                     = 0x558b710a2000
+openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=17130240, ...}) = 0
+mmap(NULL, 17130240, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f36f79fc000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=2996, ...}) = 0
+read(3, "# Locale name alias data base.\n#"..., 4096) = 2996
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/share/locale/en_US.UTF-8/LC_MESSAGES/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/share/locale/en_US.utf8/LC_MESSAGES/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/share/locale/en_US/LC_MESSAGES/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/share/locale/en.UTF-8/LC_MESSAGES/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/share/locale/en.utf8/LC_MESSAGES/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/share/locale/en/LC_MESSAGES/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/share/locale-langpack/en_US.UTF-8/LC_MESSAGES/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/share/locale-langpack/en_US.utf8/LC_MESSAGES/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/share/locale-langpack/en_US/LC_MESSAGES/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/share/locale-langpack/en.UTF-8/LC_MESSAGES/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/share/locale-langpack/en.utf8/LC_MESSAGES/coreutils.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/share/locale-langpack/en/LC_MESSAGES/coreutils.mo", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=613, ...}) = 0
+mmap(NULL, 613, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f36f8c84000
+close(3)                                = 0
+openat(AT_FDCWD, "/proc/self/mountinfo", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(3, "24 29 0:22 / /sys rw,nosuid,node"..., 1024) = 1024
+read(3, "d rw,nosuid,nodev,noexec,relatim"..., 1024) = 1024
+read(3, "s/fs/cgroup/memory rw,nosuid,nod"..., 1024) = 1024
+read(3, "21 / /sys/kernel/config rw,nosui"..., 1024) = 1024
+read(3, "077,dmask=0077,codepage=437,ioch"..., 1024) = 839
+read(3, "", 1024)                       = 0
+lseek(3, 0, SEEK_CUR)                   = 4935
+close(3)                                = 0
+stat("/dev", {st_mode=S_IFDIR|0755, st_size=4500, ...}) = 0
+stat("/run", {st_mode=S_IFDIR|0755, st_size=960, ...}) = 0
+stat("/", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/sys/kernel/security", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+stat("/dev/shm", {st_mode=S_IFDIR|S_ISVTX|0777, st_size=80, ...}) = 0
+stat("/run/lock", {st_mode=S_IFDIR|S_ISVTX|0777, st_size=100, ...}) = 0
+stat("/sys/fs/cgroup", {st_mode=S_IFDIR|0755, st_size=380, ...}) = 0
+stat("/sys/fs/cgroup/unified", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+stat("/sys/fs/cgroup/systemd", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+stat("/sys/fs/pstore", {st_mode=S_IFDIR|0750, st_size=0, ...}) = 0
+stat("/sys/fs/bpf", {st_mode=S_IFDIR|S_ISVTX|0700, st_size=0, ...}) = 0
+stat("/sys/fs/cgroup/perf_event", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+stat("/sys/fs/cgroup/devices", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+stat("/sys/fs/cgroup/cpuset", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+stat("/sys/fs/cgroup/net_cls,net_prio", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+stat("/sys/fs/cgroup/blkio", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+stat("/sys/fs/cgroup/hugetlb", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+stat("/sys/fs/cgroup/rdma", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+stat("/sys/fs/cgroup/memory", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+stat("/sys/fs/cgroup/pids", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+stat("/sys/fs/cgroup/cpu,cpuacct", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+stat("/sys/fs/cgroup/freezer", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+stat("/sys/kernel/tracing", {st_mode=S_IFDIR|0700, st_size=0, ...}) = 0
+stat("/dev/hugepages", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+stat("/sys/kernel/config", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+stat("/snap/canonical-livepatch/95", {st_mode=S_IFDIR|0755, st_size=140, ...}) = 0
+stat("/snap/core18/1988", {st_mode=S_IFDIR|0755, st_size=348, ...}) = 0
+stat("/snap/snapd/11036", {st_mode=S_IFDIR|0755, st_size=119, ...}) = 0
+stat("/snap/code/55", {st_mode=S_IFDIR|0755, st_size=181, ...}) = 0
+stat("/snap/code/57", {st_mode=S_IFDIR|0755, st_size=181, ...}) = 0
+stat("/snap/snapd/11107", {st_mode=S_IFDIR|0755, st_size=119, ...}) = 0
+stat("/snap/snap-store/518", {st_mode=S_IFDIR|0755, st_size=174, ...}) = 0
+stat("/snap/gtk-common-themes/1514", {st_mode=S_IFDIR|0755, st_size=76, ...}) = 0
+stat("/snap/gnome-3-34-1804/66", {st_mode=S_IFDIR|0755, st_size=107, ...}) = 0
+stat("/snap/core/10859", {st_mode=S_IFDIR|0755, st_size=333, ...}) = 0
+stat("/boot/efi", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+stat("/proc/sys/fs/binfmt_misc", {st_mode=S_IFDIR|0755, st_size=0, ...}) = 0
+stat("/run/snapd/ns", {st_mode=S_IFDIR|0755, st_size=160, ...}) = 0
+stat("/run/user/1000", {st_mode=S_IFDIR|0700, st_size=680, ...}) = 0
+stat("/run/snapd/ns/canonical-livepatch.mnt", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+stat("/run/user/1000/gvfs", 0x7ffcefebfeb0) = -1 EACCES (Permission denied)
+stat("/run/user/1000/doc", 0x7ffcefebfeb0) = -1 EACCES (Permission denied)
+stat("/run/snapd/ns/snap-store.mnt", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+uname({sysname="Linux", nodename="ichbinadi", ...}) = 0
+statfs("/dev", {f_type=TMPFS_MAGIC, f_bsize=4096, f_blocks=986273, f_bfree=986273, f_bavail=986273, f_files=986273, f_ffree=985720, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_NOEXEC|ST_RELATIME}) = 0
+statfs("/run", {f_type=TMPFS_MAGIC, f_bsize=4096, f_blocks=198713, f_bfree=198221, f_bavail=198221, f_files=993563, f_ffree=992500, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_NODEV|ST_NOEXEC|ST_RELATIME}) = 0
+statfs("/", {f_type=EXT2_SUPER_MAGIC, f_bsize=4096, f_blocks=239965708, f_bfree=237352809, f_bavail=225145769, f_files=61022208, f_ffree=60797411, f_fsid={val=[930895201, 3874090221]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0
+statfs("/sys/kernel/security", {f_type=SECURITYFS_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_NODEV|ST_NOEXEC|ST_RELATIME}) = 0
+statfs("/dev/shm", {f_type=TMPFS_MAGIC, f_bsize=4096, f_blocks=993563, f_bfree=986891, f_bavail=986891, f_files=993563, f_ffree=993481, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_NODEV}) = 0
+statfs("/run/lock", {f_type=TMPFS_MAGIC, f_bsize=4096, f_blocks=1280, f_bfree=1279, f_bavail=1279, f_files=993563, f_ffree=993558, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_NODEV|ST_NOEXEC|ST_RELATIME}) = 0
+statfs("/sys/fs/cgroup", {f_type=TMPFS_MAGIC, f_bsize=4096, f_blocks=993563, f_bfree=993563, f_bavail=993563, f_files=993563, f_ffree=993545, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_RDONLY|ST_NOSUID|ST_NODEV|ST_NOEXEC}) = 0
+statfs("/sys/fs/cgroup/unified", {f_type=CGROUP2_SUPER_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_NODEV|ST_NOEXEC|ST_RELATIME}) = 0
+statfs("/sys/fs/cgroup/systemd", {f_type=CGROUP_SUPER_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_NODEV|ST_NOEXEC|ST_RELATIME}) = 0
+statfs("/sys/fs/pstore", {f_type=PSTOREFS_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_NODEV|ST_NOEXEC|ST_RELATIME}) = 0
+statfs("/sys/fs/bpf", {f_type=BPF_FS_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_NODEV|ST_NOEXEC|ST_RELATIME}) = 0
+statfs("/sys/fs/cgroup/perf_event", {f_type=CGROUP_SUPER_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_NODEV|ST_NOEXEC|ST_RELATIME}) = 0
+statfs("/sys/fs/cgroup/devices", {f_type=CGROUP_SUPER_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_NODEV|ST_NOEXEC|ST_RELATIME}) = 0
+statfs("/sys/fs/cgroup/cpuset", {f_type=CGROUP_SUPER_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_NODEV|ST_NOEXEC|ST_RELATIME}) = 0
+statfs("/sys/fs/cgroup/net_cls,net_prio", {f_type=CGROUP_SUPER_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_NODEV|ST_NOEXEC|ST_RELATIME}) = 0
+statfs("/sys/fs/cgroup/blkio", {f_type=CGROUP_SUPER_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_NODEV|ST_NOEXEC|ST_RELATIME}) = 0
+statfs("/sys/fs/cgroup/hugetlb", {f_type=CGROUP_SUPER_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_NODEV|ST_NOEXEC|ST_RELATIME}) = 0
+statfs("/sys/fs/cgroup/rdma", {f_type=CGROUP_SUPER_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_NODEV|ST_NOEXEC|ST_RELATIME}) = 0
+statfs("/sys/fs/cgroup/memory", {f_type=CGROUP_SUPER_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_NODEV|ST_NOEXEC|ST_RELATIME}) = 0
+statfs("/sys/fs/cgroup/pids", {f_type=CGROUP_SUPER_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_NODEV|ST_NOEXEC|ST_RELATIME}) = 0
+statfs("/sys/fs/cgroup/cpu,cpuacct", {f_type=CGROUP_SUPER_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_NODEV|ST_NOEXEC|ST_RELATIME}) = 0
+statfs("/sys/fs/cgroup/freezer", {f_type=CGROUP_SUPER_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_NODEV|ST_NOEXEC|ST_RELATIME}) = 0
+statfs("/sys/kernel/tracing", {f_type=TRACEFS_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_NODEV|ST_NOEXEC|ST_RELATIME}) = 0
+statfs("/dev/hugepages", {f_type=HUGETLBFS_MAGIC, f_bsize=2097152, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=2097152, f_flags=ST_VALID|ST_RELATIME}) = 0
+statfs("/sys/kernel/config", {f_type=CONFIGFS_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_NODEV|ST_NOEXEC|ST_RELATIME}) = 0
+statfs("/snap/canonical-livepatch/95", {f_type=SQUASHFS_MAGIC, f_bsize=131072, f_blocks=73, f_bfree=0, f_bavail=0, f_files=34, f_ffree=0, f_fsid={val=[1795, 0]}, f_namelen=256, f_frsize=131072, f_flags=ST_VALID|ST_RDONLY|ST_NODEV|ST_RELATIME}) = 0
+statfs("/snap/core18/1988", {f_type=SQUASHFS_MAGIC, f_bsize=131072, f_blocks=444, f_bfree=0, f_bavail=0, f_files=10817, f_ffree=0, f_fsid={val=[1793, 0]}, f_namelen=256, f_frsize=131072, f_flags=ST_VALID|ST_RDONLY|ST_NODEV|ST_RELATIME}) = 0
+statfs("/snap/snapd/11036", {f_type=SQUASHFS_MAGIC, f_bsize=131072, f_blocks=249, f_bfree=0, f_bavail=0, f_files=470, f_ffree=0, f_fsid={val=[1794, 0]}, f_namelen=256, f_frsize=131072, f_flags=ST_VALID|ST_RDONLY|ST_NODEV|ST_RELATIME}) = 0
+statfs("/snap/code/55", {f_type=SQUASHFS_MAGIC, f_bsize=131072, f_blocks=1198, f_bfree=0, f_bavail=0, f_files=4235, f_ffree=0, f_fsid={val=[1796, 0]}, f_namelen=256, f_frsize=131072, f_flags=ST_VALID|ST_RDONLY|ST_NODEV|ST_RELATIME}) = 0
+statfs("/snap/code/57", {f_type=SQUASHFS_MAGIC, f_bsize=131072, f_blocks=1246, f_bfree=0, f_bavail=0, f_files=4616, f_ffree=0, f_fsid={val=[1797, 0]}, f_namelen=256, f_frsize=131072, f_flags=ST_VALID|ST_RDONLY|ST_NODEV|ST_RELATIME}) = 0
+statfs("/snap/snapd/11107", {f_type=SQUASHFS_MAGIC, f_bsize=131072, f_blocks=259, f_bfree=0, f_bavail=0, f_files=474, f_ffree=0, f_fsid={val=[1799, 0]}, f_namelen=256, f_frsize=131072, f_flags=ST_VALID|ST_RDONLY|ST_NODEV|ST_RELATIME}) = 0
+statfs("/snap/snap-store/518", {f_type=SQUASHFS_MAGIC, f_bsize=131072, f_blocks=409, f_bfree=0, f_bavail=0, f_files=15847, f_ffree=0, f_fsid={val=[1800, 0]}, f_namelen=256, f_frsize=131072, f_flags=ST_VALID|ST_RDONLY|ST_NODEV|ST_RELATIME}) = 0
+statfs("/snap/gtk-common-themes/1514", {f_type=SQUASHFS_MAGIC, f_bsize=131072, f_blocks=519, f_bfree=0, f_bavail=0, f_files=63978, f_ffree=0, f_fsid={val=[1798, 0]}, f_namelen=256, f_frsize=131072, f_flags=ST_VALID|ST_RDONLY|ST_NODEV|ST_RELATIME}) = 0
+statfs("/snap/gnome-3-34-1804/66", {f_type=SQUASHFS_MAGIC, f_bsize=131072, f_blocks=1752, f_bfree=0, f_bavail=0, f_files=18508, f_ffree=0, f_fsid={val=[1792, 0]}, f_namelen=256, f_frsize=131072, f_flags=ST_VALID|ST_RDONLY|ST_NODEV|ST_RELATIME}) = 0
+statfs("/snap/core/10859", {f_type=SQUASHFS_MAGIC, f_bsize=131072, f_blocks=794, f_bfree=0, f_bavail=0, f_files=12841, f_ffree=0, f_fsid={val=[1801, 0]}, f_namelen=256, f_frsize=131072, f_flags=ST_VALID|ST_RDONLY|ST_NODEV|ST_RELATIME}) = 0
+statfs("/boot/efi", {f_type=MSDOS_SUPER_MAGIC, f_bsize=4096, f_blocks=130812, f_bfree=130811, f_bavail=130811, f_files=0, f_ffree=0, f_fsid={val=[2049, 0]}, f_namelen=1530, f_frsize=4096, f_flags=ST_VALID|ST_RELATIME}) = 0
+statfs("/proc/sys/fs/binfmt_misc", {f_type=BINFMTFS_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_NODEV|ST_NOEXEC|ST_RELATIME}) = 0
+statfs("/run/user/1000", {f_type=TMPFS_MAGIC, f_bsize=4096, f_blocks=198712, f_bfree=198701, f_bavail=198701, f_files=993563, f_ffree=993455, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_NODEV|ST_RELATIME}) = 0
+statfs("/run/snapd/ns/snap-store.mnt", {f_type=NSFS_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0, 0]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID}) = 0
+statfs("/run/user/1000/gvfs", {f_type=FUSE_SUPER_MAGIC, f_bsize=0, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0, 0]}, f_namelen=0, f_frsize=0, f_flags=ST_VALID|ST_NOSUID|ST_NODEV|ST_RELATIME}) = 0
+statfs("/run/user/1000/doc", {f_type=FUSE_SUPER_MAGIC, f_bsize=0, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0, 0]}, f_namelen=0, f_frsize=0, f_flags=ST_VALID|ST_NOSUID|ST_NODEV|ST_RELATIME}) = 0
+openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=27002, ...}) = 0
+mmap(NULL, 27002, PROT_READ, MAP_SHARED, 3, 0) = 0x7f36f8c51000
+close(3)                                = 0
+fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
+write(1, "Filesystem      Size  Used Avail"..., 49) = 49
+write(1, "udev            3,8G     0  3,8G"..., 43) = 43
+write(1, "tmpfs           777M  2,0M  775M"..., 43) = 43
+write(1, "/dev/sda5       916G   10G  859G"..., 40) = 40
+write(1, "tmpfs           3,8G   27M  3,8G"..., 47) = 47
+write(1, "tmpfs           5,0M  4,0K  5,0M"..., 48) = 48
+write(1, "tmpfs           3,8G     0  3,8G"..., 53) = 53
+write(1, "/dev/loop3      9,2M  9,2M     0"..., 67) = 67
+write(1, "/dev/loop1       56M   56M     0"..., 56) = 56
+write(1, "/dev/loop2       32M   32M     0"..., 56) = 56
+write(1, "/dev/loop4      150M  150M     0"..., 52) = 52
+write(1, "/dev/loop5      156M  156M     0"..., 52) = 52
+write(1, "/dev/loop7       33M   33M     0"..., 56) = 56
+write(1, "/dev/loop8       52M   52M     0"..., 59) = 59
+write(1, "/dev/loop6       65M   65M     0"..., 67) = 67
+write(1, "/dev/loop0      219M  219M     0"..., 63) = 63
+write(1, "/dev/loop9      100M  100M     0"..., 55) = 55
+write(1, "/dev/sda1       511M  4,0K  511M"..., 48) = 48
+write(1, "tmpfs           777M   44K  777M"..., 53) = 53
+close(1)                                = 0
+close(2)                                = 0
+exit_group(0)                           = ?
++++ exited with 0 +++
